@@ -35,4 +35,8 @@ const getDataAndEmit = async socket => {
   }
 }
 
+app.get('/', (req, res) => {
+  res.send('Hallo')
+})
+
 server.listen(port, () => console.log('Listening on ' + port))
